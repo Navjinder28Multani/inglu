@@ -9,7 +9,5 @@ services:
       value: mongodb+srv://Navjindersingh:abc1234@cluster-1.naznay1.mongodb.net/contactmanager?retryWrites=true&w=majority
     - key: NODE_ENV
       value: production
-    - key: PORT
-      value: 10000
   healthCheckPath: /api/contacts
   autoDeploy: true
