@@ -17,7 +17,8 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI, {
+const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://Navjindersingh:abc1234@cluster-1.naznay1.mongodb.net/contactmanager?retryWrites=true&w=majority';
+mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   serverSelectionTimeoutMS: 5000,
