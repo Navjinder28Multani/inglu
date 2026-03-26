@@ -2,17 +2,15 @@
   "name": "contact-manager-backend",
   "version": "1.0.0",
   "description": "Backend for contact management app",
-  "main": "server-simple.js",
+  "main": "server-test.js",
   "scripts": {
-    "start": "node server-simple.js",
-    "dev": "nodemon server-simple.js",
+    "start": "node server-test.js",
+    "dev": "nodemon server-test.js",
     "build": "cd frontend && npm run build"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^7.5.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1"
+    "cors": "^2.8.5"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
