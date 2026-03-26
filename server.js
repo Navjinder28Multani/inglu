@@ -1,11 +1,16 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
-require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 10000;
+
+// Debug environment variables
+console.log('MONGODB_URI:', process.env.MONGODB_URI ? 'Set' : 'NOT SET');
+console.log('PORT:', PORT);
 
 // Middleware
 app.use(cors());

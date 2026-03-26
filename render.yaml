@@ -13,3 +13,4 @@ services:
       value: 10000
   healthCheckPath: /api/contacts
   autoDeploy: true
+  rootDir: .
