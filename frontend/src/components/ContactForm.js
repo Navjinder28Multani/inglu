@@ -71,8 +71,8 @@ const ContactForm = ({ contact, onClose, onSave }) => {
     
     try {
       const url = contact 
-        ? `http://localhost:5000/api/contacts/${contact._id}`
-        : 'http://localhost:5000/api/contacts';
+        ? `/api/contacts/${contact._id}`
+        : '/api/contacts';
       
       const method = contact ? 'PUT' : 'POST';
       

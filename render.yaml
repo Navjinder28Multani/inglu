@@ -1,0 +1,23 @@
+services:
+  # Frontend service (React app)
+  - type: web
+    name: inglu-frontend
+    env: static
+    buildCommand: cd frontend && npm run build
+    staticPublishPath: frontend/build
+    routes:
+      - route: /*
+    
+  # Backend service (Express API)
+  - type: web
+    name: inglu-backend
+    env: node
+    repo: https://github.com/yourusername/inglu.git
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: PORT
+        value: 10000

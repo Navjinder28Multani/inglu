@@ -14,7 +14,7 @@ function App() {
 
   const fetchContacts = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/contacts');
+      const response = await fetch('/api/contacts');
       if (response.ok) {
         const data = await response.json();
         setContacts(data);
@@ -47,7 +47,7 @@ function App() {
   const handleDeleteContact = async (id) => {
     if (window.confirm('Are you sure you want to delete this contact?')) {
       try {
-        const response = await fetch(`http://localhost:5000/api/contacts/${id}`, {
+        const response = await fetch(`/api/contacts/${id}`, {
           method: 'DELETE',
         });
         if (response.ok) {
