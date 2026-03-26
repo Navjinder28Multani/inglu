@@ -2,10 +2,10 @@
   "name": "contact-manager-backend",
   "version": "1.0.0",
   "description": "Backend for contact management app",
-  "main": "server-unified.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server-unified.js",
-    "dev": "nodemon server-unified.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "build": "cd frontend && npm run build"
   },
   "dependencies": {
